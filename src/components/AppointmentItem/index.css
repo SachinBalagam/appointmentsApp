@@ -1,1 +1,32 @@
 /* Write your CSS here */
+.each-appointment {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid #b5b7c4;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.title-star-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.each-heading {
+  font-family: 'Roboto';
+  color: #171f46;
+  font-size: 20px;
+}
+.each-date {
+  color: #b5b7c4;
+  font-size: 15px;
+}
+.each-star-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

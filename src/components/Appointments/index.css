@@ -1,1 +1,109 @@
 /* Write your CSS here */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #9796f0, #fbc7d4);
+  min-height: 100vh;
+}
+.appointment-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 20px;
+}
+.form-image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.app-image {
+  display: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form-heading {
+  font-family: 'Roboto';
+  font-size: 30px;
+  color: #171f46;
+}
+.label {
+  color: #b5b7c4;
+  font-size: 10px;
+  font-family: 'Roboto';
+  margin-bottom: 3px;
+}
+.input {
+  height: 40px;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #b5b7c4;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+}
+.add-button {
+  background-color: #8b5cf6;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+}
+.line {
+  border: 1px solid #b5b7c4;
+}
+.heading-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+.starred-button {
+  background-color: transparent;
+  color: #8b5cf6;
+  border: 1px solid #8b5cf6;
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.filter-filled {
+  color: #ffffff;
+  background-color: #9897f0;
+}
+
+.filter-empty {
+  color: #9897f0;
+  background-color: white;
+  border: 1px solid #9897f0;
+}
+.appointment-list {
+  margin-top: 10px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media Screen and (min-width: 768px) {
+  .app-image {
+    display: block;
+    height: 300px;
+    width: 400px;
+    margin-left: 20px;
+  }
+  .appointment-list {
+    flex-direction: row;
+  }
+}
